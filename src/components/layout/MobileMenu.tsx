@@ -42,7 +42,7 @@ export function MobileMenu({ isOpen, onClose, navItems }: MobileMenuProps) {
         </VisuallyHidden>
 
         {/* Menu Header */}
-        <div className="sticky top-0 flex items-center justify-end h-12 px-4 bg-white border-b-2 border-gray-100 z-10">
+        <div className="sticky top-0 flex items-center justify-end h-14 px-4 bg-white border-b border-gray-200/60 z-10">
           <button
             onClick={onClose}
             className="p-2 rounded-md hover:bg-notion-hover transition-colors"
@@ -105,7 +105,7 @@ export function MobileMenu({ isOpen, onClose, navItems }: MobileMenuProps) {
                 </div>
 
                 {hasChildren && isSubmenuOpen && (
-                  <div className="border-l-2 border-primary-purple ml-4">
+                  <div className="border-l-2 border-primary-brand ml-4">
                     {item.children!.map((sub) => (
                       <Link
                         key={sub.href}

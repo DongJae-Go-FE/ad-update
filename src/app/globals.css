@@ -48,10 +48,13 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 
   /* Custom colors */
-  --color-primary-purple: rgb(126, 29, 252);
+  --color-primary-brand: #F12A37;
+  --color-primary-brand-dark: #D41E2B;
+  --color-primary-brand-light: #FEF2F2;
   --color-notion-text: rgb(55, 53, 47);
+  --color-notion-secondary: rgb(120, 119, 116);
   --color-notion-border: rgb(233, 233, 231);
-  --color-notion-hover: rgba(55, 53, 47, 0.08);
+  --color-notion-hover: rgba(55, 53, 47, 0.04);
   --color-notion-code-bg: rgba(135, 131, 120, 0.15);
   --color-notion-code: #eb5757;
 

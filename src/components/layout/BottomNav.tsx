@@ -32,17 +32,17 @@ export function BottomNav({ navItems }: BottomNavProps) {
   ];
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-200 shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
+    <nav className="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-t border-gray-200/60 shadow-[0_-1px_3px_rgba(0,0,0,0.04)]">
       <div className="max-w-225 mx-auto">
-        <div className="grid grid-cols-4 h-14">
-          {allItems.slice(0, 4).map((item) => (
+        <div className="flex justify-around h-14">
+          {allItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="flex flex-col items-center justify-center gap-0.5 text-notion-text hover:text-primary-purple transition-colors"
+              className="flex flex-col items-center justify-center gap-0.5 text-notion-secondary hover:text-primary-brand transition-colors"
             >
               {item.icon}
-              <span className="text-[11px]">{item.label}</span>
+              <span className="text-[10px] font-medium">{item.label}</span>
             </Link>
           ))}
         </div>

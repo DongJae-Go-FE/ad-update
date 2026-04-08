@@ -31,6 +31,9 @@ const pretendard = localFont({
 export const metadata: Metadata = {
   title: "광고 제안",
   description: "광고 제안서 페이지",
+  openGraph: {
+    images: ["/og.png"],
+  },
 };
 
 export default async function RootLayout({
